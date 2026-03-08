@@ -20,9 +20,9 @@ type Participant = {
   year: string;
 };
 
-export default function PosterForm() {
+export default function VideoPresentationForm() {
   const [formData, setFormData] = useState<FormDataType>({
-    eventName: "Poster Presentation",
+    eventName: "Video Presentation",
     participants: [
       {
         name: "",
@@ -49,7 +49,7 @@ export default function PosterForm() {
 
   const clearForm = () => {
     setFormData({
-      eventName: "Poster Presentation",
+      eventName: "Video Presentation",
       participants: [
         {
           name: "",
@@ -177,7 +177,7 @@ export default function PosterForm() {
 
         {formData.participants[0].year &&
           sectionsForYear[
-            +formData.participants[0].year as keyof typeof sectionsForYear
+          +formData.participants[0].year as keyof typeof sectionsForYear
           ] && (
             <LabelInputContainer className="mb-4">
               <Label htmlFor="section">Section</Label>

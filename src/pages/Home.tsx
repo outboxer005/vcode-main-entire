@@ -13,7 +13,7 @@ import {
   Crosshair, Gamepad2, Trophy, Rocket,
   Dumbbell, Timer, CircleDot,
   Mic, Drama, Palette, Sparkles,
-  PenTool, Keyboard, Braces, BrainCircuit, FileImage
+  PenTool, Keyboard, Braces, BrainCircuit, Video
 } from "lucide-react";
 
 // Import event images
@@ -24,7 +24,7 @@ import codingContestImg from "@/assets/Coding Contest.png";
 import technicalQuizImg from "@/assets/Technical Quiz.png";
 import hackathonImg from "@/assets/Hackathon.png";
 import codeHuntImg from "@/assets/Code Hunt.png";
-import posterPresentationImg from "@/assets/Poster Presentation.png";
+import videoPresentationImg from "@/assets/Video Presentation.png";
 
 const eventSections = [
   {
@@ -96,11 +96,11 @@ const eventSections = [
         registrationOpen: true,
       },
       {
-        title: "Poster Presentation",
+        title: "Video Presentation",
         label: "Visual Showcase",
         date: "Coming Soon",
-        description: "Participants will present posters based on themes such as Quantum Computing, Cybersecurity in IoT, Machine Learning, etc.",
-        icon: FileImage,
+        description: "Participants will present short videos based on themes such as Quantum Computing, Cybersecurity in IoT, Machine Learning, etc.",
+        icon: Video,
         registerUrl: "/events",
         registrationOpen: false,
       },

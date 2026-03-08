@@ -9,7 +9,7 @@ import {
   Crosshair, Gamepad2, Trophy, Rocket,
   Dumbbell, Timer, CircleDot,
   Mic, Drama, Palette, Sparkles,
-  PenTool, Keyboard, Braces, BrainCircuit, FileImage,
+  PenTool, Keyboard, Braces, BrainCircuit, Video,
 } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import HeaderButton from "./HeaderButton";
@@ -25,7 +25,7 @@ import codingContestImg from "@/assets/Coding Contest.png";
 import technicalQuizImg from "@/assets/Technical Quiz.png";
 import hackathonImg from "@/assets/Hackathon.png";
 import codeHuntImg from "@/assets/Code Hunt.png";
-import posterPresentationImg from "@/assets/Poster Presentation.png";
+import videoPresentationImg from "@/assets/Video Presentation.png";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const eventDetails: Record<string, any> = {
@@ -34,7 +34,7 @@ const eventDetails: Record<string, any> = {
   "Debugging & Defend": { Description: "Participants fix bugs in given HTML, CSS, and JavaScript files to make the project work as per the required features", "Team Size": "3 Members", Rounds: "2", Venue: "To be announced shortly", Payment: "Mandatory" },
   "Coding Contest": { Description: "Crafting logic, solving problems, creating possibilities!", "Team Size": "1", Levels: "2", Venue: "To be announced shortly", "Allowed Languages": "C, C++, Java, Python", Payment: "Mandatory" },
   "Technical Quiz": { Description: "A concept-based quiz covering OS, DBMS, OOPS, Algorithms, and Programming.", "Team Size": "4", Levels: "2", Venue: "To be announced shortly", Topics: "OS, DBMS, Data Structures, Code Snippets", Payment: "Mandatory" },
-  "Poster Presentation": { Description: "Innovative Ideas. Creative Design. Impactful Solutions. Participants present a technical topic from CSE themes through an A4 hard copy poster.", "Team Size": "2", Levels: "To be announced shortly", Venue: "To be announced shortly", "Submission Format": "Hard Copy (A4)", Payment: "Mandatory" },
+  "Video Presentation": { Description: "Innovative Ideas. Creative Storytelling. Impactful Solutions. Participants present a technical topic from CSE themes through a video presentation.", "Team Size": "2", Levels: "To be announced shortly", Venue: "To be announced shortly", "Submission Format": "Video File (MP4/MKV)", Payment: "Mandatory" },
   Hackathon: { Description: "Innovate, collaborate, create groundbreaking solutions!", "Team Size": "3rd Years – 3 Members, 2nd Years – 2 Members (Mandatory)", Levels: "To be announced shortly", Venue: "To be announced shortly", Duration: "To be announced shortly", Domain: "Web", Theme: "To be announced shortly", Payment: "Mandatory" },
   "Code Hunt": { Description: "Participants follow clue-based paths and solve logical challenges to reach the final answer", "Team Size": "4", Levels: "6-7", Venue: "To be announced shortly", Payment: "Mandatory" },
 };
@@ -52,7 +52,7 @@ const categorizedEvents = [
       { icon: <Bug className="h-6 w-6 text-amber-400" />, title: "Debugging & Defend", label: "Team of 3", description: "Fix bugs in HTML, CSS & JS. Make the project work as specified.", url: "/events", registrationOpen: true },
       { icon: <BrainCircuit className="h-6 w-6 text-violet-400" />, title: "Technical Quiz", label: "Team of 4", description: "MCQs on OS, DBMS, OOPs, Algorithms & Programming. Team of 4.", url: "/events", registrationOpen: true },
       { icon: <Braces className="h-6 w-6 text-emerald-400" />, title: "Coding Contest", label: "Individuals", description: "Solve problems in C, C++, Python, Java, or JS. Year-wise individuals.", url: "/events", registrationOpen: true },
-      { icon: <FileImage className="h-6 w-6 text-fuchsia-400" />, title: "Poster Presentation", label: "Visual Showcase", description: "Design a technical poster that clearly communicates your idea or solution.", url: "/events", registrationOpen: false },
+      { icon: <Video className="h-6 w-6 text-fuchsia-400" />, title: "Video Presentation", label: "Visual Showcase", description: "Create a technical video that clearly communicates your idea or solution.", url: "/events", registrationOpen: false },
       { icon: <Search className="h-6 w-6 text-sky-400" />, title: "Code Hunt", label: "Team of 4", description: "Follow clues, crack levels. VCODE Day morning—team of 4.", url: "/events", registrationOpen: true },
     ]
   },

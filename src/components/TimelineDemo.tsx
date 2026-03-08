@@ -6,7 +6,7 @@ import codeHuntImg from "@/assets/Code Hunt.png";
 import codingContestImg from "@/assets/Coding Contest.png";
 import debuggingDefendImg from "@/assets/Degugging&Defend.png";
 import hackathonImg from "@/assets/Hackathon.png";
-import posterPresentationImg from "@/assets/Poster Presentation.png";
+import videoPresentationImg from "@/assets/Video Presentation.png";
 import technicalQuizImg from "@/assets/Technical Quiz.png";
 import typingTestImg from "@/assets/TypingChallenge.png";
 import promptMasterImg from "@/assets/PropmtMaster.png";
@@ -87,21 +87,21 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Poster Presentation",
+      title: "Video Presentation",
       content: (
         <div>
           <p className="text-white/80 text-xl md:text-xl font-normal mb-4">
-            Present a technical topic from CSE themes through an A4 hard copy
-            poster.
+            Present a technical topic from CSE themes through a creative video
+            presentation.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src={posterPresentationImg}
-              alt="Poster Presentation"
+              src={videoPresentationImg}
+              alt="Video Presentation"
               width={500}
               height={500}
               className="rounded-lg object-contain h-50 md:h-44 lg:h-60 w-full cursor-pointer shadow-lg p-4"
-              onClick={() => openImageModal(posterPresentationImg)}
+              onClick={() => openImageModal(videoPresentationImg)}
             />
           </div>
         </div>
